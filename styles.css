@@ -165,19 +165,43 @@ hr
 
   /* Chips */
 
-  .chips-container
-  {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex: 0 0 auto;
-    flex-wrap: wrap;
-  }
+.chip-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 1px 1px 2px gray;
+  background-color: white;
+}
 
-  .chips-header
-  {
-    
-  }
+.chip-one
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
 
+.chip-components
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ 
+
+}
+
+.component
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  border-radius: 25px;
+  padding: 0.75rem;
+  margin: 0.75rem
+}
 
 
