@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root
+{
+--red: #C7010E;
+--lightred: #fad4d7;
+}
+
 main
 {
 display: block;
@@ -34,6 +40,14 @@ hr
     background-color: #f3f4f6;
     margin: 1rem;
     border-radius: 5px;
+}
+
+.container-lg {
+  min-height: 360px;
+  background-color: #f3f4f6;
+  box-shadow: 0 1px 1px lightgray;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 /* Cards */
@@ -150,7 +164,7 @@ hr
     font-size: 0.9rem;  
     border-radius: 3px;
     font-weight: bold;
-    color: #C7010E;
+    color: var(--red);
   }
   
   .card-btn-icon {
@@ -201,5 +215,81 @@ hr
   padding: 0.75rem;
   margin: 0.75rem
 }
+
+/* Drawer */
+
+.drawer-container
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+
+.drawer-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 300px;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 2px gray;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: white;
+  margin: 1rem;
+  
+}
+
+.drawer-header{
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+
+.header-desc
+{
+ font-size: 0.9rem;
+}
+
+.drawer-content
+{
+    display: flex;
+    width: 100%;
+    padding: 0.75rem;
+    gap:1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.content-text
+{
+  flex-basis:80%;
+  order: 2;
+}
+
+.drawer-link-active {
+  color: var(--red);
+  background-color: var(--lightred);
+}
+.drawer-content:hover
+{
+  background-color: var(--lightred);
+}
+
+.content-icons
+{
+  flex-grow: 1;
+  order:1;
+}
+
+
+
+
+
+
+
+
 
 
